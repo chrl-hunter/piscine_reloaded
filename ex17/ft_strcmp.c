@@ -6,7 +6,7 @@
 /*   By: cperez-h <cperez-h@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 19:21:32 by cperez-h          #+#    #+#             */
-/*   Updated: 2026/09/26 19:42:21 by cperez-h         ###   ########.fr       */
+/*   Updated: 2026/09/26 19:49:37 by cperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -20,7 +20,7 @@ int	ft_strcmp(char *s1, char *s2)
 	}
 	return (*s1 - *s2);
 }
-
+/*
 int	main(void)
 {
 	char	str1[]="Abcd";
@@ -33,3 +33,4 @@ int	main(void)
 	if (ft_strcmp(str1, str2) < 0)
 		printf("%s\n", "menor");
 }
+*/
