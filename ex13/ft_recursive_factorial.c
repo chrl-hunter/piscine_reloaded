@@ -6,10 +6,10 @@
 /*   By: cperez-h <cperez-h@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 18:35:22 by cperez-h          #+#    #+#             */
-/*   Updated: 2026/09/26 18:45:30 by cperez-h         ###   ########.fr       */
+/*   Updated: 2026/09/26 18:48:44 by cperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-# include <stdio.h>
+#include <stdio.h>
 
 int	ft_recursive_factorial(int nb)
 {
