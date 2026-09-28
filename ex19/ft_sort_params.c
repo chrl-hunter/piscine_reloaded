@@ -6,15 +6,12 @@
 /*   By: cperez-h <cperez-h@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/28 12:33:26 by cperez-h          #+#    #+#             */
-/*   Updated: 2026/09/28 16:02:53 by cperez-h         ###   ########.fr       */
+/*   Updated: 2026/09/28 16:14:24 by cperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
-void	ft_putchar(char out)
-{
-	write(1, &out, 1);
-}
+void	ft_putchar(char out);
 
 int	ft_strcmp(char *s1, char *s2)
 {
@@ -26,10 +23,21 @@ int	ft_strcmp(char *s1, char *s2)
 	return (*s1 - *s2);
 }
 
-int	main(int argc, char **argv)
+void	ft_putstr(char *str)
 {
 	int	i;
-	int	j;
+
+	i = 0;
+	while (str[i])
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+}
+
+int	main(int argc, char **argv)
+{
+	int		i;
 	char	*tmp;
 
 	i = 1;
@@ -47,12 +55,7 @@ int	main(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		j = 0;
-		while (argv[i][j])
-		{
-			ft_putchar(argv[i][j]);
-			j++;
-		}
+		ft_putstr(argv[i]);
 		ft_putchar('\n');
 		i++;
 	}
