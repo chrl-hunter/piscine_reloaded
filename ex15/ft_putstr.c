@@ -6,10 +6,12 @@
 /*   By: cperez-h <cperez-h@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 19:07:58 by cperez-h          #+#    #+#             */
-/*   Updated: 2026/09/26 19:12:21 by cperez-h         ###   ########.fr       */
+/*   Updated: 2026/09/28 11:59:15 by cperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
+
+void	ft_putchar(char out);
 
 void	ft_putstr(char *str)
 {
@@ -18,7 +20,7 @@ void	ft_putstr(char *str)
 	i = 0;
 	while (str[i])
 	{
-		write(1, &str[i], 1);
+		ft_putchar(str[i]);
 		i++;
 	}
 }
