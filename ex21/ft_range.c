@@ -6,7 +6,7 @@
 /*   By: cperez-h <cperez-h@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 12:53:53 by cperez-h          #+#    #+#             */
-/*   Updated: 2026/09/29 13:17:43 by cperez-h         ###   ########.fr       */
+/*   Updated: 2026/09/29 15:24:28 by cperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -18,6 +18,8 @@ int	*ft_range(int min, int max)
 	int	*range;
 	int	i;
 
+	if (min >= max)
+		return (NULL);
 	len = max - min;
 	range = malloc (sizeof(int) * len);
 	if (!range)

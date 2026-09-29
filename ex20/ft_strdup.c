@@ -6,7 +6,7 @@
 /*   By: cperez-h <cperez-h@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 12:16:54 by cperez-h          #+#    #+#             */
-/*   Updated: 2026/09/29 12:51:51 by cperez-h         ###   ########.fr       */
+/*   Updated: 2026/09/29 15:26:35 by cperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -19,7 +19,7 @@ char	*ft_strdup(char *src)
 	char	*dest;
 
 	len = 0;
-	while (src)
+	while (src[len])
 		len++;
 	dest = malloc (sizeof(char) * (len));
 	i = 0;

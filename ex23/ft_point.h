@@ -6,11 +6,11 @@
 /*   By: cperez-h <cperez-h@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 14:51:07 by cperez-h          #+#    #+#             */
-/*   Updated: 2026/09/29 14:56:14 by cperez-h         ###   ########.fr       */
+/*   Updated: 2026/09/29 15:34:05 by cperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef FT_POINT
-# define FT_POINT
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
 typedef struct s_point
 {
