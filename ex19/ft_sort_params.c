@@ -6,7 +6,7 @@
 /*   By: cperez-h <cperez-h@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/28 12:33:26 by cperez-h          #+#    #+#             */
-/*   Updated: 2026/09/28 16:14:24 by cperez-h         ###   ########.fr       */
+/*   Updated: 2026/09/29 12:11:42 by cperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -48,7 +48,7 @@ int	main(int argc, char **argv)
 			tmp = argv[i];
 			argv[i] = argv[i + 1];
 			argv[i + 1] = tmp;
-			i = 1;
+			i = 0;
 		}
 		i++;
 	}
