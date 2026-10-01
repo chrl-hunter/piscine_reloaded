@@ -4,7 +4,7 @@ CFLAGS	= -Wall -Werror -Wextra
 
 SRCS	= ft_display_file.c
 
-OBJS	= &(SRCS:.c=.o)
+OBJS = &(SRCS:.c=.o)
 
 all : $(NAME)
 

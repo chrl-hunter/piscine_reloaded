@@ -12,7 +12,7 @@ SRCS	=  $(PATH_SRC)ft_putchar.c\
 		$(PATH_SRC)ft_strlen.c\
 		$(PATH_SRC)ft_swap.c
 
-OBJS	= &(SRCS:.c=.o)
+OBJS = &(SRCS:.c=.o)
 
 all : $(NAME)
 
