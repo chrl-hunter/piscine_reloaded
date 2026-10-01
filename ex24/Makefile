@@ -1,26 +1,22 @@
-NAME	= libft.a
+NAME        = libft.a
 
-PATH_SRC	= srcs/
-PATH_HEAD	= includes/
+SRCS_DIR    = srcs
+INC_DIR     = includes
 
-CFLAGS	= -Wall -Werror -Wextra
-IFLAGS	= -I$(PATH_HEAD)
+SRCS        = $(SRCS_DIR)/ft_putchar.c $(SRCS_DIR)/ft_swap.c $(SRCS_DIR)/ft_putstr.c $(SRCS_DIR)/ft_strlen.c $(SRCS_DIR)/ft_strcmp.c
+OBJS        = $(SRCS:.c=.o)
 
-SRCS	=  $(PATH_SRC)ft_putchar.c\
-		$(PATH_SRC)ft_putstr.c\
-		$(PATH_SRC)ft_strcmp.c\
-		$(PATH_SRC)ft_strlen.c\
-		$(PATH_SRC)ft_swap.c
+CC      = cc
+CFLAGS      = -Wall -Wextra -Werror
+IFLAGS      = -I$(INC_DIR)
 
-OBJS = &(SRCS:.c=.o)
+all: $(NAME)
 
-all : $(NAME)
-
-$(NAME) : $(OBJS)
+$(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-%.o : %.c
-	cc $(CFLAGS) $(IFLAGS) -c $< -o $@
+%.o: %.c
+	$(CC) $(CFLAGS) $(IFLAGS) -c $< -0 $@
 
 clean:
 	rm -f $(OBJS)

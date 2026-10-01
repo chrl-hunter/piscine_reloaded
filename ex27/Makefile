@@ -4,12 +4,12 @@ CFLAGS	= -Wall -Werror -Wextra
 
 SRCS	= ft_display_file.c
 
-OBJS = &(SRCS:.c=.o)
+OBJS = $(SRCS:.c=.o)
 
 all : $(NAME)
 
-$(NAME) : $(OBJS)
-	cc $(CFLAGS) $(OBJS) -o $(NAME) 
+$(NAME): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
 %.o : %.c
 	cc $(CFLAGS) -c $< -o $@
